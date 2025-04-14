@@ -7,7 +7,7 @@ export const featuredProducts: Product[] = [
     price: 29.99,
     rating: 4.7,
     reviewCount: 345,
-    images: ["/images/yoga-Mat.jpeg"],
+    images: ["/images/Yoga-Mat.jpeg"],
     description:
       'Premium non-slip yoga mat made from eco-friendly TPE material. Extra thick 6mm cushioning provides joint support during workouts. Includes carrying strap and features alignment markers for perfect poses. Measures 72" long x 24" wide.',
     category: "Sports",
