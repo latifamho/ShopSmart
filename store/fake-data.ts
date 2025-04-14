@@ -7,7 +7,7 @@ export const featuredProducts: Product[] = [
     price: 29.99,
     rating: 4.7,
     reviewCount: 345,
-    images: ["/yogamat.jpg"],
+    images: ["/images/yoga-Mat.jpeg"],
     description:
       'Premium non-slip yoga mat made from eco-friendly TPE material. Extra thick 6mm cushioning provides joint support during workouts. Includes carrying strap and features alignment markers for perfect poses. Measures 72" long x 24" wide.',
     category: "Sports",
@@ -21,7 +21,7 @@ export const featuredProducts: Product[] = [
     price: 899.99,
     rating: 4.8,
     reviewCount: 320,
-    images: ["/tv.jpg"],
+    images: ["/images/smartTv.jpg"],
     description:
       "55-inch 4K HDR10+ smart TV with quantum dot technology for breathtaking color accuracy. Built-in voice control with Alexa compatibility. Includes all major streaming apps pre-installed. 120Hz refresh rate eliminates motion blur for sports and action movies.",
     category: "Electronics",
@@ -35,7 +35,7 @@ export const featuredProducts: Product[] = [
     price: 119.99,
     rating: 4.7,
     reviewCount: 278,
-    images: ["/airfryer.jpg"],
+    images: ["/images/airFryer.webp"],
     description:
       "Large capacity air fryer with 7 one-touch cooking presets including roast, bake, and dehydrate. Digital touchscreen with adjustable temperature (180-400°F) and 60-minute timer. Non-stick basket is dishwasher safe for easy cleaning. Cooks with 75% less fat than traditional frying.",
     category: "Home & Kitchen",
@@ -50,7 +50,7 @@ export const featuredProducts: Product[] = [
     discountPrice: 39.99,
     rating: 4.3,
     reviewCount: 156,
-    images: ["/jeans.jpg"],
+    images: ["/images/jeans.jpeg"],
     description:
       'Modern slim fit jeans made with premium stretch denim for all-day comfort. Classic medium blue wash with subtle fading details. Reinforced stitching at stress points. Mid-rise waist with 32" inseam (other lengths available). Machine wash cold, tumble dry low.',
     category: "Clothing",
@@ -65,7 +65,7 @@ export const featuredProducts: Product[] = [
     discountPrice: 19.99,
     rating: 4.6,
     reviewCount: 432,
-    images: ["/serum.jpg"],
+    images: ["/images/viteminC.webp"],
     description:
       "Potent 20% vitamin C serum with hyaluronic acid and vitamin E. Brightens dull skin, reduces appearance of dark spots and fine lines. Lightweight, fast-absorbing formula suitable for all skin types. Dermatologist tested, cruelty-free, and packaged in UV-protective bottle to maintain potency.",
     category: "Beauty",
@@ -80,7 +80,7 @@ export const featuredProducts: Product[] = [
     discountPrice: 179.99,
     rating: 4.9,
     reviewCount: 420,
-    images: ["/headphones.jpg"],
+    images: ["/images/headphones.webp"],
     description:
       "Premium over-ear headphones with advanced active noise cancellation technology. 40-hour battery life with quick charge (5 mins = 4 hrs playback). Crystal clear calls with built-in microphone. Plush memory foam ear cushions for extended comfort. Includes carrying case and airline adapter.",
     category: "Electronics",
@@ -95,7 +95,7 @@ export const featuredProducts: Product[] = [
     discountPrice: 199.99,
     rating: 4.8,
     reviewCount: 145,
-    images: ["/cookware.jpg"],
+    images: ["/images/stanlesSteal.webp"],
     description:
       'Professional 10-piece stainless steel cookware set with impact-bonded aluminum bases for even heat distribution. Oven safe to 500°F. Includes 8" and 10" fry pans, 1.5qt and 3qt saucepans with lids, and 5qt stockpot. Induction compatible and dishwasher safe for easy cleanup.',
     category: "Home & Kitchen",
@@ -110,7 +110,7 @@ export const featuredProducts: Product[] = [
     discountPrice: 99.99,
     rating: 4.9,
     reviewCount: 520,
-    images: ["/runningshoes.jpg"],
+    images: ["/images/runningShose.jpg"],
     description:
       "Performance running shoes with responsive cushioning for high-energy rebound. Breathable mesh upper with reinforced toe cap. Rubber outsole provides excellent traction on both roads and trails. Removable cushioned insole accommodates orthotics. Available in multiple width options.",
     category: "Sports",
@@ -125,7 +125,7 @@ export const featuredProducts: Product[] = [
     discountPrice: 69.99,
     rating: 4.5,
     reviewCount: 245,
-    images: ["/earbuds.jpg"],
+    images: ["/images/wirelessheadphone1.jpeg"],
     description:
       "True wireless earbuds with Bluetooth 5.2 for stable connection up to 30 feet. 20-hour total battery life (5hrs per charge + 3 charges from case). IPX5 water resistance withstands sweat and rain. Touch controls for music, calls, and voice assistant. Comes with 3 sizes of silicone ear tips for custom fit.",
     category: "Electronics",
@@ -139,7 +139,7 @@ export const featuredProducts: Product[] = [
     price: 19.99,
     rating: 4.0,
     reviewCount: 89,
-    images: ["/tshirt.jpg"],
+    images: ["/images/Tshirt.webp"],
     description:
       "Classic crewneck t-shirt made from 100% premium combed cotton for superior softness. Reinforced shoulder-to-shoulder tape for durability. Available in 12 colors from neutrals to bold hues. Pre-shrunk fabric maintains shape wash after wash. Unisex sizing from XS to XXL.",
     category: "Clothing",
@@ -153,7 +153,7 @@ export const featuredProducts: Product[] = [
     price: 29.99,
     rating: 4.3,
     reviewCount: 178,
-    images: ["/lipstick.jpg"],
+    images: ["/images/lipsteakSet.jpeg"],
     description:
       "Luxury matte lipstick set featuring 6 highly pigmented shades from everyday nudes to statement reds. Long-wearing formula glides on smoothly without drying lips. Enriched with vitamin E and avocado oil for comfortable wear. Paraben-free and cruelty-free. Includes mini sharpener for precise application.",
     category: "Beauty",
@@ -167,7 +167,7 @@ export const featuredProducts: Product[] = [
     price: 1299.99,
     rating: 4.6,
     reviewCount: 112,
-    images: ["/laptop.jpg"],
+    images: ["/images/gamingLaptop.jpg"],
     description:
       'High-performance gaming laptop with NVIDIA RTX 3060 GPU and 11th Gen Intel Core i7 processor. 15.6" 144Hz IPS display with 100% sRGB coverage. 16GB DDR4 RAM and 1TB NVMe SSD provide lightning-fast load times. RGB backlit keyboard with anti-ghosting technology. Dual fan cooling system maintains optimal temperatures during marathon sessions.',
     category: "Electronics",
@@ -181,7 +181,7 @@ export const featuredProducts: Product[] = [
     price: 39.99,
     rating: 4.4,
     reviewCount: 320,
-    images: ["/pillow.jpg"],
+    images: ["/images/pellow.webp"],
     description:
       "Contour memory foam pillow designed by chiropractors to align spine and relieve neck pain. Hypoallergenic shredded foam adapts to your sleeping position. Removable bamboo cover is breathable and machine washable. Medium firmness suitable for back and side sleepers. Includes bonus travel bag.",
     category: "Home & Kitchen",
@@ -195,7 +195,7 @@ export const featuredProducts: Product[] = [
     price: 79.99,
     rating: 4.8,
     reviewCount: 112,
-    images: ["/dumbbell.jpg"],
+    images: ["/images/dumbleset.webp"],
     description:
       "Adjustable dumbbell set with 10kg total weight (5kg per dumbbell). Textured rubber coating provides secure grip and protects floors. 8 weight plates (4x1.25kg, 4x0.5kg) allow for 2.5kg increments. Chrome-plated steel handles with secure locking collars. Ideal for home workouts and strength training.",
     category: "Sports",
@@ -209,7 +209,7 @@ export const featuredProducts: Product[] = [
     price: 44.99,
     rating: 4.5,
     reviewCount: 210,
-    images: ["/hoodie.jpg"],
+    images: ["/images/oversizeHoddi.webp"],
     description:
       "Cozy oversized hoodie made from premium fleece with a soft brushed interior. Relaxed fit with dropped shoulders and kangaroo pocket. Ribbed cuffs and hem for better fit. Available in 8 neutral and pastel colors. Machine washable without pilling or fading.",
     category: "Clothing",
@@ -223,7 +223,7 @@ export const featuredProducts: Product[] = [
     price: 299.99,
     rating: 4.6,
     reviewCount: 187,
-    images: ["/vacuum.jpg"],
+    images: ["/images/robotvacumeCleaner.jpeg"],
     description:
       "Smart robot vacuum with laser navigation for precise room mapping. Powerful suction picks up pet hair and debris. Connects to WiFi for app control and scheduling. Self-charging and can clean for up to 150 minutes per charge. Includes HEPA filter to trap 99.97% of allergens. Works with Alexa and Google Assistant.",
     category: "Home & Kitchen",
@@ -238,7 +238,7 @@ export const featuredProducts: Product[] = [
     discountPrice: 649.99,
     rating: 4.7,
     reviewCount: 189,
-    images: ["/smartphone.jpg"],
+    images: ["/images/smarPhone.jpeg"],
     description:
       'Flagship smartphone with 6.5" AMOLED display featuring 120Hz refresh rate. Triple camera system includes 64MP main sensor, ultra-wide, and macro lenses. 128GB storage with 8GB RAM for smooth multitasking. 5000mAh battery lasts all day with fast charging support. 5G capable with in-display fingerprint sensor.',
     category: "Electronics",
@@ -252,7 +252,7 @@ export const featuredProducts: Product[] = [
     price: 199.99,
     rating: 4.7,
     reviewCount: 342,
-    images: ["/headphones.jpg"],
+    images: ["/images/wirelessHeadphones.webp"],
     description:
       "Premium over-ear headphones with active noise cancellation, 30-hour battery life, and crystal-clear Bluetooth 5.0 audio. Includes carrying case and 3.5mm audio cable.",
     category: "Electronics",
@@ -266,7 +266,7 @@ export const featuredProducts: Product[] = [
     price: 149.99,
     rating: 4.5,
     reviewCount: 215,
-    images: ["/smartwatch.jpg"],
+    images: ["/images/smartwatch.webp"],
     description:
       "Waterproof fitness tracker with heart rate monitor, sleep tracking, and 7-day battery life. Compatible with iOS and Android. Tracks 15+ workout modes.",
     category: "Electronics",
@@ -281,7 +281,7 @@ export const featuredProducts: Product[] = [
     discountPrice: 29.99,
     rating: 4.4,
     reviewCount: 134,
-    images: ["/joggers.jpg"],
+    images: ["/images/fitpant.webp"],
     description:
       "Performance joggers made from lightweight, moisture-wicking fabric with 4-way stretch. Elastic waistband with adjustable drawstring and zippered security pocket. Tapered leg with ribbed cuffs. Reflective details for nighttime visibility. Perfect for workouts or casual wear.",
     category: "Clothing",
@@ -295,7 +295,7 @@ export const featuredProducts: Product[] = [
     price: 59.99,
     rating: 4.5,
     reviewCount: 210,
-    images: ["/cleanser.jpg"],
+    images: ["/images/Electric-Facial-Cleanser.jpg"],
     description:
       "Sonic facial cleansing brush with 6 interchangeable heads for different skin needs. Waterproof design for shower use. 3-speed settings from gentle to deep clean. Rechargeable battery lasts 30 days per charge. Includes travel case and acne-clearing brush head. Clinically proven to remove 99.5% of makeup and impurities.",
     category: "Beauty",
@@ -309,7 +309,7 @@ export const featuredProducts: Product[] = [
     price: 119.99,
     rating: 4.6,
     reviewCount: 587,
-    images: ["/airfryer.jpg"],
+    images: ["/images/Smart-Air-Fryer.jpg"],
     description:
       "5.8-quart digital air fryer with 7 cooking presets and 400°F max temperature. 1500W power with rapid air circulation technology. Dishwasher-safe parts.",
     category: "Home & Kitchen",
@@ -323,7 +323,7 @@ export const featuredProducts: Product[] = [
     price: 49.99,
     rating: 4.3,
     reviewCount: 342,
-    images: ["/pillow.jpg"],
+    images: ["/images/pillow.webp"],
     description:
       "Certified hypoallergenic shredded memory foam pillow with adjustable loft. Breathable bamboo cover with zipper for filling adjustment.",
     category: "Home & Kitchen",
@@ -337,7 +337,7 @@ export const featuredProducts: Product[] = [
     price: 89.99,
     rating: 4.5,
     reviewCount: 327,
-    images: ["/straightener.jpg"],
+    images: ["/images/Hair-Straightener.webp"],
     description:
       "1-inch ceramic tourmaline flat iron with adjustable temperature up to 450°F. 30-second heat up and auto shut-off for safety.",
     category: "Beauty",
@@ -351,7 +351,7 @@ export const featuredProducts: Product[] = [
     price: 129.99,
     rating: 4.6,
     reviewCount: 287,
-    images: ["/kettlebell.jpg"],
+    images: ["/images/Adjustable-Kettlebell.webp"],
     description:
       "Space-saving adjustable kettlebell with 5 weight settings (5kg, 10kg, 15kg, 18kg, 20kg). Durable cast iron construction with ergonomic handle.",
     category: "Sports",
@@ -365,7 +365,7 @@ export const featuredProducts: Product[] = [
     price: 99.99,
     rating: 4.7,
     reviewCount: 843,
-    images: ["/runningshoes.jpg"],
+    images: ["/images/runningShose1.webp"],
     description:
       "Lightweight running shoes with responsive cushioning. Breathable mesh upper with reinforced toe cap. Non-marking rubber outsole with traction pattern.",
     category: "Sports",
@@ -379,7 +379,7 @@ export const featuredProducts: Product[] = [
     price: 19.99,
     rating: 4.7,
     reviewCount: 512,
-    images: ["/facemask.jpg"],
+    images: ["/images/faceMask.jpeg"],
     description:
       "Sheet masks infused with hyaluronic acid and aloe vera. Dermatologist tested. Paraben-free and cruelty-free. Suitable for sensitive skin.",
     category: "Beauty",
@@ -393,7 +393,7 @@ export const featuredProducts: Product[] = [
     price: 59.99,
     rating: 4.2,
     reviewCount: 203,
-    images: ["/jeans.jpg"],
+    images: ["/images/mens-jeans.jpg"],
     description:
       "Stretch denim jeans with modern slim fit. Abrasion-resistant fabric with reinforced knees. Mid-rise waist with five-pocket styling.",
     category: "Clothing",
@@ -407,7 +407,7 @@ export const featuredProducts: Product[] = [
     price: 89.99,
     rating: 4.5,
     reviewCount: 97,
-    images: ["/jacket.jpg"],
+    images: ["/images/jacket.webp"],
     description:
       "Water-resistant windbreaker with adjustable hood and zippered pockets. Breathable mesh lining. Packs into its own pocket for travel.",
     category: "Clothing",
@@ -421,7 +421,7 @@ export const featuredProducts: Product[] = [
     price: 29.99,
     rating: 4.2,
     reviewCount: 95,
-    images: ["/charger.jpg"],
+    images: ["/images/Wireless-Charging-Pad.webp"],
     description:
       "Fast Qi-certified wireless charging pad delivers up to 15W power for compatible devices. Non-slip silicone surface keeps phone in place. LED indicator shows charging status. Compact design with 6ft braided nylon cable. Built-in safeguards prevent overheating and overcharging.",
     category: "Electronics",

@@ -40,6 +40,7 @@ export default function ProductCard({
   // Check if the product is marked as a favorite or added to the cart
   const isFavorited = productFromStore?.isFavorited ?? false;
   const isAdded = productFromStore?.addedToCard ?? false;
+  console.log(product.images[0]);
 
   return (
     <MotionDiv
@@ -55,14 +56,15 @@ export default function ProductCard({
     >
       <Card
         onClick={() => onClick(product.category)} // Handle category click for filtering
-        className="overflow-hidden transition-all duration-300 hover:shadow-md"
+        className="overflow-hidden transition-all duration-300 hover:shadow-md m-3"
       >
         {/* Link to the product details page */}
         <Link href={`/product/${product.id}`}>
           <div className="relative aspect-square overflow-hidden">
             {/* Product image */}
+
             <Image
-              src="/landing.jpeg"
+              src={`${product.images[0]}`}
               alt={product.name}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

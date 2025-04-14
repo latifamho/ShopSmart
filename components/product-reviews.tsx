@@ -11,7 +11,7 @@ export default function ProductReviews() {
   const toggleHelpful = useReviewStore((state) => state.toggleHelpful);
 
   return (
-    <div className="space-y-4">
+    <div className=" md:my-14 my-7 space-y-4">
       {/* Header section with title and a button to write a review */}
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold">Customer Reviews</h2>

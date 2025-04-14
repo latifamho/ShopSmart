@@ -42,9 +42,9 @@ export default function ProductPage({ params }: ProductPageProps) {
 
   return (
     <div className="mx-auto container px-4 py-8 md:px-6 md:py-12">
-      <div className="mb-8 flex max-lg:flex-col lg:gap-14   max-lg:gap-4 justify-center!">
+      <div className="mb-8 flex max-lg:flex-col lg:gap-14 sm:m-6  max-lg:gap-4 justify-center!">
         {/* Image carousel for the product */}
-        <ImageCarousel />
+        <ImageCarousel image={product.images} />
 
         <div className="space-y-9">
           {/* Product name, rating, and stock info */}

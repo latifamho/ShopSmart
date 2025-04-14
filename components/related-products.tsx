@@ -13,7 +13,7 @@ const RelatedProducts = ({ category }: { category: Category }) => {
   const product = getProductsByCategory(category);
 
   return (
-    <div className="space-y-4 py-4">
+    <div className="space-y-4 md:my-16 my-7">
       {/* Section Title */}
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold">Related Products </h2>

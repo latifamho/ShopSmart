@@ -10,7 +10,8 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-export function ImageCarousel() {
+export function ImageCarousel({image}:{image:string[]}) {
+ 
   return (
     <div className=" mx-auto  flex items-center  justify-center">
       {/* Carousel wrapper with dynamic width for different screen sizes */}
@@ -28,7 +29,8 @@ export function ImageCarousel() {
                     <div className="relative aspect-square w-full max-w-[500px] overflow-hidden rounded-[10px]">
                       {/* Product image inside the carousel item */}
                       <Image
-                        src="/images/land.webp" 
+                        // src="/images/land.webp" 
+                        src={image[0]}
                         alt="Featured product" 
                         fill  
                         className="object-cover "  
