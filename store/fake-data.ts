@@ -1,5 +1,63 @@
 import { Product } from "@/types/types";
-
+export const Trending: Product[] = [
+  {
+    id: "22",
+    name: "Smart Fitness Watch",
+    price: 149.99,
+    rating: 4.5,
+    reviewCount: 215,
+    images: ["/images/smartwatch.webp"],
+    description:
+      "Waterproof fitness tracker with heart rate monitor, sleep tracking, and 7-day battery life. Compatible with iOS and Android. Tracks 15+ workout modes.",
+    category: "Electronics",
+    stock: 35,
+    isFavorited: false,
+    addedToCard: false,
+  },
+  {
+    id: "10",
+    name: "Athletic Jogger Pants",
+    price: 34.99,
+    discountPrice: 29.99,
+    rating: 4.4,
+    reviewCount: 134,
+    images: ["/images/fitpant.webp"],
+    description:
+      "Performance joggers made from lightweight, moisture-wicking fabric with 4-way stretch. Elastic waistband with adjustable drawstring and zippered security pocket. Tapered leg with ribbed cuffs. Reflective details for nighttime visibility. Perfect for workouts or casual wear.",
+    category: "Clothing",
+    stock: 50,
+    isFavorited: false,
+    addedToCard: false,
+  },
+  {
+    id: "17",
+    name: "Electric Facial Cleanser",
+    price: 59.99,
+    rating: 4.5,
+    reviewCount: 210,
+    images: ["/images/Electric-Facial-Cleanser.jpg"],
+    description:
+      "Sonic facial cleansing brush with 6 interchangeable heads for different skin needs. Waterproof design for shower use. 3-speed settings from gentle to deep clean. Rechargeable battery lasts 30 days per charge. Includes travel case and acne-clearing brush head. Clinically proven to remove 99.5% of makeup and impurities.",
+    category: "Beauty",
+    stock: 30,
+    isFavorited: false,
+    addedToCard: false,
+  },
+  {
+    id: "25",
+    name: "Smart Air Fryer",
+    price: 119.99,
+    rating: 4.6,
+    reviewCount: 587,
+    images: ["/images/Smart-Air-Fryer.jpg"],
+    description:
+      "5.8-quart digital air fryer with 7 cooking presets and 400°F max temperature. 1500W power with rapid air circulation technology. Dishwasher-safe parts.",
+    category: "Home & Kitchen",
+    stock: 17,
+    isFavorited: false,
+    addedToCard: false,
+  },
+];
 export const featuredProducts: Product[] = [
   {
     id: "18",

@@ -52,3 +52,8 @@ export type ReviewStore = {
   getAllReviews: () => Reviews[];
   toggleHelpful: (id: string) => void;
 };
+
+export type TrendingStore={
+  trending:Product[]
+  getAll:()=>Product[]
+}

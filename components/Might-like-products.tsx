@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import ProductCard from "./product-card";
-import { useProductStore } from "@/store/store";
+import { useProductStore, useTrendingStore } from "@/store/store";
 import { Product } from "@/types/types";
 import { Loader } from "lucide-react";
 
@@ -10,9 +10,11 @@ const MightLike = () => {
   const getProductsByCategories = useProductStore(
     (state) => state.getProductsByCategories
   );
-  const getAllProducts = useProductStore((state) => state.products);
-  const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
-  const [hasSelectedCategories, setHasSelectedCategories] = useState(false);
+
+  const trendingProducts = useTrendingStore((state) => state.getAll());
+
+  const [youMightLike, setyouMightLike] = useState<Product[]>([]);
+  const [head, setHead] = useState<boolean>(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,19 +23,15 @@ const MightLike = () => {
       ? JSON.parse(storedCategories)
       : [];
 
-    // Check if there are any selected categories
     const hasCategories = existingCategories.length > 0;
-    setHasSelectedCategories(hasCategories);
 
-    let products: Product[] = [];
+    let selectedProducts: Product[] = [];
 
     if (hasCategories) {
-      // If there are categories, get products by those categories
-      products = getProductsByCategories(existingCategories);
+      const products = getProductsByCategories(existingCategories);
 
-      // Group products by category
+      // Group by category
       const productsByCategory: Record<string, Product[]> = {};
-
       products.forEach((product) => {
         if (!productsByCategory[product.category]) {
           productsByCategory[product.category] = [];
@@ -41,27 +39,20 @@ const MightLike = () => {
         productsByCategory[product.category].push(product);
       });
 
-      // Take 2 random products from each category
-      const randomProducts: Product[] = [];
-      Object.values(productsByCategory).forEach((categoryProducts) => {
-        if (categoryProducts.length <= 3) {
-          randomProducts.push(...categoryProducts);
-        } else {
-          const shuffled = [...categoryProducts].sort(
-            () => 0.5 - Math.random()
-          );
-          randomProducts.push(...shuffled.slice(0, 2));
-        }
+      // Take up to 2 products from each category
+      Object.values(productsByCategory).forEach((group) => {
+        selectedProducts.push(...group.slice(0, 2));
       });
-
-      setRelatedProducts(randomProducts);
+      setHead(true);
     } else {
-      // If no categories, get 4 random products from all products
-      const shuffled = [...getAllProducts].sort(() => 0.5 - Math.random());
-      setRelatedProducts(shuffled.slice(0, 4));
+      // If no categories, use trending directly
+      selectedProducts = trendingProducts;
     }
+
+    setyouMightLike(selectedProducts);
     setLoading(false);
-  }, [getProductsByCategories, getAllProducts]);
+  }, [getProductsByCategories, trendingProducts]);
+
   const handleCardClick = (category: string) => {
     const existingCategories = JSON.parse(
       localStorage.getItem("selectedCategories") || "[]"
@@ -75,7 +66,6 @@ const MightLike = () => {
       "selectedCategories",
       JSON.stringify(existingCategories)
     );
-    setHasSelectedCategories(true);
   };
 
   return (
@@ -87,12 +77,12 @@ const MightLike = () => {
       ) : (
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-bold">
-            {hasSelectedCategories ? "You Might Like" : "Trending"}
+            {head ? "You Might Like" : "Trending  "}
           </h2>
         </div>
       )}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full">
-        {relatedProducts.map((product: Product, index) => (
+        {youMightLike.map((product: Product, index) => (
           <ProductCard
             index={index}
             key={product.id}

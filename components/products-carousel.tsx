@@ -1,4 +1,4 @@
-// import styles in _app.tsx or component
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

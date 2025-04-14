@@ -19,8 +19,7 @@ export default function Header() {
     <header className="sticky  text-foreground p-3 top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container m-auto flex   h-16 items-center justify-center">
         <div className="mr-4   w-full justify-between  flex">
-          {/* Logo linking to homepage */}
-          <Link
+            <Link
             href="/"
             className="mr-6 flex items-center space-x-2 font-bold text-xl"
           >

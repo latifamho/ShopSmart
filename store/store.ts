@@ -1,6 +1,6 @@
-import { ProductStore, ReviewStore } from "@/types/types";
+import { ProductStore, ReviewStore, TrendingStore } from "@/types/types";
 import { create } from "zustand";
-import { fakeReviews, featuredProducts } from "./fake-data";
+import { fakeReviews, featuredProducts, Trending } from "./fake-data";
 
 // Create a store for managing product state and actions
 export const useProductStore = create<ProductStore>((set, get) => ({
@@ -76,4 +76,9 @@ export const useReviewStore = create<ReviewStore>((set, get) => ({
       }),
     }));
   },
+}));
+
+export const useTrendingStore = create<TrendingStore>((set, get) => ({
+  trending: Trending,
+  getAll: () => get().trending,
 }));

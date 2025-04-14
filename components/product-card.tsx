@@ -40,8 +40,42 @@ export default function ProductCard({
   // Check if the product is marked as a favorite or added to the cart
   const isFavorited = productFromStore?.isFavorited ?? false;
   const isAdded = productFromStore?.addedToCard ?? false;
-  console.log(product.images[0]);
 
+  // Handles toggling the favorite status and saving category
+  const handleToggleFavorite = (e: React.MouseEvent, product: Product) => {
+    e.preventDefault();
+  
+    toggleFavorite(product.id);
+    const existingCategories = JSON.parse(
+      localStorage.getItem("selectedCategories") || "[]"
+    );
+
+    if (!existingCategories.includes(product.category)) {
+      existingCategories.push(product.category);
+      localStorage.setItem(
+        "selectedCategories",
+        JSON.stringify(existingCategories)
+      );
+    }
+  };
+
+  // Handles toggling the cart status and saving category
+  const handleAddToCart = (e: React.MouseEvent, product: Product) => {
+    e.preventDefault();
+    toggleBuyCard(product.id);
+
+    const existingCategories = JSON.parse(
+      localStorage.getItem("selectedCategories") || "[]"
+    );
+
+    if (!existingCategories.includes(product.category)) {
+      existingCategories.push(product.category);
+      localStorage.setItem(
+        "selectedCategories",
+        JSON.stringify(existingCategories)
+      );
+    }
+  };
   return (
     <MotionDiv
       variants={variants}
@@ -93,20 +127,7 @@ export default function ProductCard({
         <CardFooter className="p-2 pt-0">
           <div className="flex items-center w-full">
             {/* Favorite button */}
-            <Button
-              onClick={(e) => {
-                e.stopPropagation(); // Prevent card click from triggering
-                toggleFavorite(product.id); // Toggle product favorite status
-              }}
-              variant="outline"
-              className={cn(
-                "rounded-full transition-colors",
-                isFavorited && "text-red-500 hover:text-red-600 border-red-200"
-              )}
-              aria-label={
-                isFavorited ? "Remove from wishlist" : "Add to wishlist"
-              }
-            >
+            <Button onClick={(e) => handleToggleFavorite(e, product)}>
               <Heart className={cn("h-4 w-4", isFavorited && "fill-red-500")} />
             </Button>
 
@@ -119,10 +140,7 @@ export default function ProductCard({
                   ? "bg-green-500 hover:bg-green-600"
                   : "bg-foreground hover:bg-secondary-dark"
               }`}
-              onClick={(e) => {
-                e.stopPropagation(); // Prevent card click from triggering
-                toggleBuyCard(product.id); // Toggle product add-to-cart status
-              }}
+              onClick={(e) => handleAddToCart(e, product)}
             >
               {isAdded ? (
                 <>
