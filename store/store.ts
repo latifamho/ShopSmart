@@ -16,7 +16,7 @@ export const useProductStore = create<ProductStore>((set, get) => ({
   // Get products by an array of categories
   getProductsByCategories: (categories: string[]) => {
     // Filter products that belong to one of the specified categories
-    return get().products.filter((product) =>
+    return get().products.reverse().filter((product) =>
       categories.includes(product.category)
     );
   },
