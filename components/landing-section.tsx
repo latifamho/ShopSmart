@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const LandingSection = () => {
+      
   return (
          <section className="mb-12 rounded-lg bg-muted p-6 md:p-10">
             <div className="grid gap-6 md:grid-cols-2 md:gap-10">

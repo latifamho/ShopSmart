@@ -39,6 +39,7 @@ export const useProductStore = create<ProductStore>((set, get) => ({
           : product
       ),
     }));
+    
   },
 
   // Toggle the 'addedToCard' state of a product by its ID

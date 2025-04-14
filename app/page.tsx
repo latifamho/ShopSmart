@@ -1,6 +1,7 @@
 // Import the LandingSection and FeaturedProduct components
 import FeaturedProduct from "@/components/featured-product";
 import LandingSection from "@/components/landing-section";
+import MightLike from "@/components/Might-like-products";
 
 // Home page component
 export default function Home() {
@@ -10,6 +11,8 @@ export default function Home() {
       {/* Top landing section of the homepage */}
       <LandingSection />
 
+      {/* You might also like section */}
+      <MightLike />
       {/* Section displaying featured products */}
       <FeaturedProduct />
     </div>

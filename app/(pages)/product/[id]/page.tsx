@@ -6,8 +6,7 @@ import Button from "@/components/base/button";
 import { ImageCarousel } from "@/components/product-image-carousel";
 import ProductReviews from "@/components/product-reviews";
 import { cn } from "@/lib/utils"; // Utility function for conditional classNames
-import { Check, Heart, ShoppingCart } from "lucide-react"; // Icons
-import MighLike from "@/components/Might-like-products";
+import { Check, Heart, ShoppingCart } from "lucide-react"; // Icons 
 import { useProductStore } from "@/store/store"; // Zustand store for product state
 import { useState } from "react"; // React state hook
 import RelatedProducts from "@/components/related-products";
@@ -139,8 +138,6 @@ export default function ProductPage({ params }: ProductPageProps) {
       {/* Related products based on the same category */}
       <RelatedProducts category={product.category} />
 
-      {/* You might also like section */}
-      <MighLike />
     </div>
   );
 }

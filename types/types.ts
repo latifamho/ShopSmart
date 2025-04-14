@@ -7,7 +7,12 @@ export type InputProps = {
 export type TTextVariants = "filled" | "standard";
 export type TColorVariants = "primary" | "secondary";
 export type TButtonVariants = "fill" | "outline";
-export type Category="Electronics" | "Clothing" | "Home & Kitchen" | "Beauty" | "Sports";
+export type Category =
+  | "Electronics"
+  | "Clothing"
+  | "Home & Kitchen"
+  | "Beauty"
+  | "Sports";
 export type Product = {
   id: string;
   name: string;
@@ -20,7 +25,7 @@ export type Product = {
   category: Category;
   stock: number;
   isFavorited: boolean;
-  addedToCard:boolean
+  addedToCard: boolean;
 };
 
 export type ProductStore = {
