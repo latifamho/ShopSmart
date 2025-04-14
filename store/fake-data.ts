@@ -317,20 +317,7 @@ export const featuredProducts: Product[] = [
     isFavorited: false,
     addedToCard: false,
   },
-  {
-    id: "26",
-    name: "Memory Foam Pillow",
-    price: 49.99,
-    rating: 4.3,
-    reviewCount: 342,
-    images: ["/images/pillow.webp"],
-    description:
-      "Certified hypoallergenic shredded memory foam pillow with adjustable loft. Breathable bamboo cover with zipper for filling adjustment.",
-    category: "Home & Kitchen",
-    stock: 62,
-    isFavorited: false,
-    addedToCard: false,
-  },
+ 
   {
     id: "27",
     name: "Ceramic Hair Straightener",
